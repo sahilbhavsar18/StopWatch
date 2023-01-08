@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: skyblue;
+}
+.box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timer{
+    text-align: center;
+    font-size: 2rem;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.btn{
+    padding: 20px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+#start:hover{
+    border: 1px solid black;
+    color: skyblue;
+    background-color: rgb(29, 119, 155);
+    transition: .3s all linear;
+}
+#start{
+    border: 1px solid white;
+    margin-right: 10px;
+}
+#stop{
+    border: 1px solid white;
+    margin-right: 10px;
+}
+#stop:hover{
+    border: 1px solid black;
+    color: skyblue;
+    background-color: rgb(29, 119, 155);
+    transition: .3s all linear;
+}
+#reset{
+    border: 1px solid white;
+    margin-right: 10px;
+}
+#reset:hover{
+    border: 1px solid black;
+    color: skyblue;
+    background-color: rgb(29, 119, 155);
+    transition: .3s all linear;
+}
+@media only screen and (max-width: 555px)
+{
+    body{
+        background-color: yellowgreen;
+        color: whitesmoke;
+    }
+    .FirstHead{
+        font-size: 1.7rem;
+    }
+    .SecondHead{
+        font-size: 1.7rem;
+    }
+    #start,#stop,#reset{
+        font-size: 1.4rem;
+        padding: 12px;
+    }
+    #seconds{
+        font-size: 1.4rem;
+    }
+    #miliseconds{
+        font-size: 1.4rem;
+    }
+    .dot{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 480px)
+{
+    body{
+        background-color: rgb(255, 255, 91);
+        color: rgb(0, 0, 0);
+    }
+    .FirstHead{
+        font-size: 1.2rem;
+    }
+    .SecondHead{
+        font-size: 1.2rem;
+    }
+    #start,#stop,#reset{
+        font-size: 1.3rem;
+        padding: 4px;
+        border-color: black;
+    }
+    #seconds{
+        font-size: 1.4rem;
+    }
+    #miliseconds{
+        font-size: 1.4rem;
+    }
+    .dot{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 350px)
+{
+    body{
+        background-color: rgb(122, 254, 210);
+        color: rgb(0, 0, 0);
+    }
+    .FirstHead{
+        font-size: 1.1rem;
+    }
+    .SecondHead{
+        font-size: 1.1rem;
+    }
+    #start,#stop,#reset{
+        font-size: 1.1rem;
+        padding: 4px;
+        border-color: black;
+    }
+    #seconds{
+        font-size: 1.4rem;
+    }
+    #miliseconds{
+        font-size: 1.4rem;
+    }
+    .dot{
+        font-size: 1.4rem;
+    }
+}
+.effect{
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-duration: 10s;
+}
+@keyframes shake {
+    from{
+        transform: rotate(3.12turn);
+    }
+    to{
+        transform: rotate(3.18turn);
+    }
+}
